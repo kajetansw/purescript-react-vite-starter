@@ -3,14 +3,16 @@
   "version": "0.0.0",
   "scripts": {
     "build:spago": "spago build",
+    "build:spago:prod": "spago build && spago bundle-app --to './src/index.prod.js' && npm run transform-require",
     "build:spago:watch": "spago build --watch",
-    "build": "spago build && spago bundle-app --to dist/index.js && vite build",
+    "build": "npm run build:spago:prod && vite build",
     "format": "purs-tidy format-in-place 'src/**/*.purs'",
     "prestart": "npm run build:spago",
     "preview": "vite preview",
     "serve:build": "serve dist -l 8080",
     "spago": "spago",
     "start": "vite",
+    "transform-require": "node scripts/transform-require.js",
     "vite": "vite"
   },
   "dependencies": {
@@ -24,6 +26,7 @@
     "purs-tidy": "^0.6.4",
     "serve": "^13.0.2",
     "spago": "^0.20.3",
-    "vite": "^2.7.2"
+    "vite": "^2.7.2",
+    "vite-plugin-ejs": "^1.4.3"
   }
 }

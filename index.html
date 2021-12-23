@@ -9,6 +9,11 @@
   </head>
   <body>
     <div id="app"></div>
-    <script type="module" src="/src/index.js"></script>
+
+    <% if(isDev){ %>
+      <script type="module" src="/src/index.dev.js"></script>
+    <% } else { %>
+      <script type="module" src="/src/index.prod.js"></script>
+    <% } %>
   </body>
 </html>

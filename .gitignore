@@ -20,3 +20,6 @@ output
 
 # IDE
 .idea
+
+# Build
+/src/index.prod.js
