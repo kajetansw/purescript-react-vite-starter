@@ -4,14 +4,14 @@
   "scripts": {
     "build:spago": "spago build",
     "build:spago:prod": "spago build && spago bundle-app --to './src/index.prod.js' && npm run transform-require",
-    "build:spago:watch": "spago build --watch",
-    "build": "npm run build:spago:prod && vite build",
+    "build": "rm -rf dist && npm run build:spago:prod && vite build",
     "format": "purs-tidy format-in-place 'src/**/*.purs'",
     "prestart": "npm run build:spago",
     "preview": "vite preview",
-    "serve:build": "serve dist -l 8080",
+    "serve:prod": "serve dist -l 8080",
     "spago": "spago",
     "start": "vite",
+    "start:spago": "spago build --watch",
     "transform-require": "node scripts/transform-require.js",
     "vite": "vite"
   },

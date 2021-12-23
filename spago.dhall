@@ -18,7 +18,6 @@ to generate this file without the comments in this block.
   , "maybe"
   , "prelude"
   , "psci-support"
-  , "random"
   , "react-basic"
   , "react-basic-dom"
   , "react-basic-hooks"

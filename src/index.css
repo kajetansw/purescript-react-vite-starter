@@ -12,13 +12,13 @@ code {
     monospace;
 }
 
-.box {
+.container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 2px;
 }
-.screen {
-  background-color: grey;
-  height: 360px;
-  width: 640px;
+
+.button {
+  height: 30px;
+  width: 30px;
 }
