@@ -1,0 +1,22 @@
+# Vite
+node_modules
+.DS_Store
+dist
+dist-ssr
+*.local
+output
+
+# PureScript
+/bower_components/
+/node_modules/
+/.pulp-cache/
+/output/
+/generated-docs/
+/.psc-package/
+/.psc*
+/.purs*
+/.psa*
+/.spago
+
+# IDE
+.idea

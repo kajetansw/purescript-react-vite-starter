@@ -1,0 +1,29 @@
+{
+  "name": "purescript-react-vite-starter",
+  "version": "0.0.0",
+  "scripts": {
+    "build:spago": "spago build",
+    "build:spago:watch": "spago build --watch",
+    "build": "spago build && spago bundle-app --to dist/index.js && vite build",
+    "format": "purs-tidy format-in-place 'src/**/*.purs'",
+    "prestart": "npm run build:spago",
+    "preview": "vite preview",
+    "serve:build": "serve dist -l 8080",
+    "spago": "spago",
+    "start": "vite",
+    "vite": "vite"
+  },
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@originjs/vite-plugin-commonjs": "^1.0.1",
+    "@vitejs/plugin-react": "^1.0.7",
+    "purescript": "^0.14.5",
+    "purs-tidy": "^0.6.4",
+    "serve": "^13.0.2",
+    "spago": "^0.20.3",
+    "vite": "^2.7.2"
+  }
+}
