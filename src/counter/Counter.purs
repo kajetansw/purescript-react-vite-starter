@@ -18,16 +18,16 @@ mkCounter = do
       { children:
           [ R.text $ "Count: " <> show count
           , R.div
-              { className: "container"
+              { className: "counter__container"
               , children:
                   [ R.button
-                      { className: "button"
+                      { className: "counter__button"
                       , children: [ R.text "+" ]
                       , onClick: handler_ do
                           setCount \state -> { count: state.count + 1 }
                       }
                   , R.button
-                      { className: "button"
+                      { className: "counter__button"
                       , children: [ R.text "-" ]
                       , onClick: handler_ do
                           setCount \state -> { count: state.count - 1 }
