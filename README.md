@@ -7,6 +7,10 @@
 </h1>
 
 <div align="center">
+  <h2>PureScript➕React➕Vite <br>Project Starter</h2>
+</div>
+
+<div align="center">
 <br />
 
 [![Project license](https://img.shields.io/github/license/kajetansw/purescript-react-vite-starter.svg?style=flat-square)](LICENSE)
@@ -20,6 +24,7 @@
 
 - [About](#about)
   - [Built With](#built-with)
+  - [Why PostCSS](#why-postcss)
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
