@@ -1,3 +1,4 @@
+/* Add imports to all `.pcss` or `.css` here */
 @import "counter/style.pcss";
 
 body {
