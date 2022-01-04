@@ -43,8 +43,9 @@
 This is a starter project for everyone who'd like to start with PureScript with React and Vite as 
 a tool for your dev server and build. 
 
-This solution enables swift development with PureScript + React by having e.g. 
-[Hot Module Replacement](https://vitejs.dev/guide/features.html#hot-module-replacement) enabled
+This solution enables swift development with PureScript + React by enabling everything Vite has
+to offer e.g. 
+[Hot Module Replacement](https://vitejs.dev/guide/features.html#hot-module-replacement), a plugin ecosystem
 and fast pre-bundling with esbuild. More about that can be found [here](https://vitejs.dev/guide/why.html).
 
 The project is also set up so that any changes to PureScript `.purs` files will trigger changes
@@ -68,9 +69,9 @@ in React (each component having its own CSS file), as its impossible to do somet
 in a PureScript module.
 
 If you think it's not a solution for you, and you'd like to replace it with e.g. [`purescript-react-basic-emotion`](https://github.com/lumihq/purescript-react-basic-emotion),
-it's fairly easy to do so!
+it's not that hard to do so!
 
-To do that you'd have to:
+To get rid of PostCSS integration (enabling you to add your own solution) you'd have to:
 - delete `autoprefixer`, `postcss` and `postcss-nesting` packages
 - remove all `.pcss` files
 - delete `postcss.config.js` file
@@ -87,7 +88,7 @@ to set up your IDE with necessary .
 
 First run the command below to clone your repo in any directory you desire:
 ```shell
-git clone https://github.com/kajetansw/purescript-react-vite-starter
+git clone https://github.com/kajetansw/purescript-react-vite-starter.git
 ```
 
 Then run the command below in your terminal to install all npm dependencies:
