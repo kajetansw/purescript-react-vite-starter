@@ -17,7 +17,6 @@ to generate this file without the comments in this block.
   , "exceptions"
   , "maybe"
   , "prelude"
-  , "psci-support"
   , "react-basic"
   , "react-basic-dom"
   , "react-basic-hooks"
