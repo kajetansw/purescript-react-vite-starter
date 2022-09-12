@@ -1,3 +1,3 @@
-const { main } = require('../output/Main');
+import { main } from '../output/Main';
 
 main();
