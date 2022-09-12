@@ -6,6 +6,9 @@ dist-ssr
 *.local
 output
 
+# vim
+*.swp
+
 # PureScript
 /bower_components/
 /node_modules/
