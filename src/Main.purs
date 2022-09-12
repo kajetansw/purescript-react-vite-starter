@@ -19,7 +19,7 @@ main = do
   root <- getElementById "app" $ toNonElementParentNode doc
   counter <- mkCounter
   case root of
-     Nothing -> throw "Could not find container element"
-     Just container -> do
-       reactRoot <- createRoot container
-       renderRoot reactRoot (counter {})
+    Nothing -> throw "Could not find container element"
+    Just container -> do
+      reactRoot <- createRoot container
+      renderRoot reactRoot (counter {})
